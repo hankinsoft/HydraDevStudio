@@ -1,0 +1,31 @@
+name: Feature request
+description: Something Hydra Dev Studio should do, or do differently.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests are read, and the ones with a clear "why" are the easiest to act on.
+        **This tracker is public:** leave out anything that identifies your servers.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The job, not the feature. "I deploy a site to three servers every Friday and..." beats "add a sync button".
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you imagine it working, if you have an idea.
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: Another app, a script, a workaround in Hydra.
+  - type: input
+    id: version
+    attributes:
+      label: Hydra Dev Studio version
+      placeholder: "2026.281 (14)"

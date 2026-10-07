@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support (licences, orders, anything you would rather not post)
+    url: mailto:kyle@hankinsoft.com?subject=Hydra%20Dev%20Studio
+    about: Email the developer directly.
+  - name: Security issue
+    url: mailto:kyle@hankinsoft.com?subject=Hydra%20Dev%20Studio%20security
+    about: Please report privately, not as a public issue.
+  - name: Documentation and FAQ
+    url: https://hydradevstudio.com/docs
+    about: How things work, what it connects to, where passwords are stored.

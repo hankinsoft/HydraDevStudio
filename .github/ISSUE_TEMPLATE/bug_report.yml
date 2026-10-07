@@ -1,0 +1,83 @@
+name: Bug report
+description: Something in Hydra Dev Studio does not work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This tracker is public.** Never include passwords, private keys, tokens,
+        connection strings, host names or anything else that identifies your servers.
+        For anything private, email kyle@hankinsoft.com instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a PostgreSQL connection
+        2. ...
+  - type: textarea
+    id: error
+    attributes:
+      label: Exact error message
+      description: Copy it word for word if there was one. Remove any server names first.
+      render: text
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Connection type involved
+      options:
+        - Not connection-specific
+        - MySQL / MariaDB
+        - PostgreSQL
+        - Microsoft SQL Server
+        - Oracle
+        - SQLite
+        - DuckDB
+        - ClickHouse
+        - Amazon Athena
+        - Amazon DynamoDB
+        - SFTP
+        - FTP / FTPS
+        - Amazon S3 (or S3-compatible)
+        - WebDAV
+        - Azure Blob Storage
+        - SMB
+        - SSH terminal
+        - Local folder
+        - Git
+        - Subversion
+        - Agent access / MCP / hydra CLI
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hydra Dev Studio version
+      description: Hydra Dev Studio › About Hydra Dev Studio shows it.
+      placeholder: "2026.281 (14)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Where you got it
+      options:
+        - hydradevstudio.com (direct download)
+        - Homebrew
+        - Mac App Store
+        - Setapp
+        - Not sure
