@@ -1,11 +1,14 @@
 blank_issues_enabled: false
+# GitHub accepts only http(s) here (mailto: links are silently dropped), so
+# private and security reports go through the support page, which gives the
+# address.
 contact_links:
   - name: Private support (licences, orders, anything you would rather not post)
-    url: mailto:kyle@hankinsoft.com?subject=Hydra%20Dev%20Studio
-    about: Email the developer directly.
+    url: https://hydradevstudio.com/support
+    about: Email the developer directly; the address is on the support page.
   - name: Security issue
-    url: mailto:kyle@hankinsoft.com?subject=Hydra%20Dev%20Studio%20security
-    about: Please report privately, not as a public issue.
+    url: https://hydradevstudio.com/support#security
+    about: Please report privately by email, not as a public issue.
   - name: Documentation and FAQ
     url: https://hydradevstudio.com/docs
     about: How things work, what it connects to, where passwords are stored.
